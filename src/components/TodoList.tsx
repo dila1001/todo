@@ -50,7 +50,7 @@ function TodoList() {
     });
   }
 
-  const checkTodoItem = (todoItem: TodoItem) => {
+  function checkTodoItem(todoItem: TodoItem) {
     todoItem.done = !todoItem.done;
     updateTodoItem(todoItem);
     fetch(`/api/todos/${todoItem.id}`, {
@@ -62,7 +62,7 @@ function TodoList() {
       todoItem.done = !todoItem.done;
       updateTodoItem(todoItem);
     });
-  };
+  }
 
   function deleteItem(todoId: string) {
     const oldTodos = todos;
