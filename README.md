@@ -1,7 +1,5 @@
 # To-do App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Overview
 
 This project was built as part of a take-home assignment.
