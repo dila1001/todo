@@ -1,0 +1,67 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);
+
+$text-color: #ffff;
+$magenta: #e83681;
+$roboto: "Roboto", sans-serif;
+
+.btn-custom {
+  text-transform: uppercase;
+  font: 500 13px $roboto;
+  @include button-variant(
+    #17e5e4,
+    #17e5e4,
+    $text-color,
+    $hover-color: $text-color
+  );
+}
+
+.nav-pills {
+  text-transform: uppercase;
+  font: 500 12px $roboto;
+  .nav-link {
+    background: none;
+    border: 0;
+    color: #626262;
+    @include border-radius(0px);
+
+    &:hover,
+    &:focus {
+      background: #f7f7f7;
+    }
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: $magenta;
+    @include gradient-bg(transparent);
+    border-bottom: 2px solid $magenta;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.rounded-corners {
+  border-radius: 12px;
+}
