@@ -13,6 +13,10 @@ LIVE LINK:
 1. Adds, deletes and checks off tasks.
 2. Filters tasks according to `done` status.
 
+## Tech Stack
+
+[React 17.0.2](https://reactjs.org/), [Typescript 4.5.5](https://www.typescriptlang.org/), [Bootstrap 5.1.3](https://getbootstrap.com/), [MirageJS](https://miragejs.com), [Sass 1.49.8](https://sass-lang.com/)
+
 ## Running this project locally
 
 1. Clone this project locally.
