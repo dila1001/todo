@@ -4,7 +4,7 @@
 
 A to-do app to keep track of daily tasks. This project was built as part of a take-home assignment.
 
-LIVE LINK:
+LIVE LINK: [https://dila1001-todo.netlify.app/](https://dila1001-todo.netlify.app/)
 
 ## Features
 
