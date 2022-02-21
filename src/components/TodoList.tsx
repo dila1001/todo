@@ -42,8 +42,6 @@ function TodoList() {
     setTaskValue("");
   }
 
-  // https://streakyc.github.io/react-draggable-list/example/
-
   function updateTodoItem(todoItem: TodoItem) {
     setTodos((prevTodos) => {
       return prevTodos.map((item) => {
