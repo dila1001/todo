@@ -7,11 +7,7 @@ import "bootstrap/dist/js/bootstrap";
 
 import { makeServer } from "./server";
 
-const environment = process.env.NODE_ENV;
-
-if (environment !== "production") {
-  makeServer({ environment });
-}
+makeServer({ environment: "development" });
 
 ReactDOM.render(
   <React.StrictMode>
