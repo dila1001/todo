@@ -12,7 +12,6 @@ export interface TodoItem extends TodoItemTemplate {
 export interface TodoProps extends TodoItem {
   toggle: (todoItem: TodoItem) => void;
   del: (todoId: string) => void;
-  onClick?: (e: React.MouseEvent<HTMLElement>) => (todoId: string) => void;
 }
 
 type Display = "All" | "Active" | "Completed";
@@ -98,7 +97,7 @@ function TodoList() {
         text={todo.text}
         done={todo.done}
         toggle={() => checkTodoItem(todo)}
-        del={() => deleteItem(todo.id)}
+        del={deleteItem}
       />
     ));
   }
