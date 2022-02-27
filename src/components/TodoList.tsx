@@ -71,7 +71,7 @@ function TodoList() {
     fetch(`/api/todos/${todoId}`, { method: "DELETE" }).catch((err) => {
       console.log(err);
       // If the API call fails then revert to the previous state
-      setTodos((todos) => oldTodos);
+      setTodos(oldTodos);
     });
   }
 
